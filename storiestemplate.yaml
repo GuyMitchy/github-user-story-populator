@@ -1,0 +1,11 @@
+stories:
+  - type: "Feature"
+    title: "User Authentication"
+    as_a: "website user"
+    i_want: "to log in to the system"
+    so_that: "I can access my personal dashboard"
+    priority: "Must Have"
+    labels: ["feature", "authentication"]
+    acceptance_criteria:
+      - "User can log in with email and password"
+      - "User receives error message on invalid credentials" 
