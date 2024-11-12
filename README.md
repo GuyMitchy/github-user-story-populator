@@ -16,17 +16,21 @@ The GitHub User Story Creator is designed to read user stories from a YAML confi
 
 ## Project Structure
 
-GitHubUserStoryCreator
-├── .env # Environment variables
-├── requirements.txt # Project dependencies
-├── stories.yaml # User story configurations
-├── src/
-│ ├── init.py
-│ ├── github_client.py # GitHub API client class
-│ ├── story_parser.py # YAML parsing and validation
-│ ├── issue_creator.py # Issue creation logic
-│ └── utils.py # Helper functions
-└── main.py # Script entry point
+## Project Structure
+
+```
+GitHubUserStoryCreator/
+    ├── .env                    # Environment variables
+    ├── requirements.txt        # Project dependencies
+    ├── stories.yaml            # User story configurations
+    ├── src/
+    │   ├── __init__.py
+    │   ├── github_client.py    # GitHub API client class
+    │   ├── story_parser.py     # YAML parsing and validation
+    │   ├── issue_creator.py    # Issue creation logic
+    │   └── utils.py            # Helper functions
+    └── main.py                 # Script entry point
+```
 
 
 ## How It Works
