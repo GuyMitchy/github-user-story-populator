@@ -24,23 +24,22 @@ GitHubUserStoryCreator/
     ├── requirements.txt        # Project dependencies
     ├── stories.yaml            # User story configurations
     ├── src/
-    │   ├── __init__.py
     │   ├── github_client.py    # GitHub API client class
     │   ├── story_parser.py     # YAML parsing and validation
     │   ├── issue_creator.py    # Issue creation logic
-    │   └── main.py             # Script entry point
+    |── main.py             # Script entry point
 ```
 
 
 ## How It Works
 
-1. **Setup**: Configure your environment by setting up a virtual environment and installing dependencies listed in `requirements.txt`. Populate the `.env` file with your GitHub API token.
+1. **Setup**: Configure your environment by setting up a virtual environment and installing dependencies listed in `requirements.txt`. Populate the `.env` file with your GitHub API token and repository name to be populated.
 
-2. **YAML Parsing**: The `story_parser.py` module reads and validates user stories from `stories.yaml`. It ensures all required fields are present and formats the stories for GitHub. Take your user stories and give them to an llm along with the template.yaml file. Then add the output to the stories.yaml file.
+2. **YAML Parsing**: The `story_parser.py` module reads and validates user stories from `stories.yaml`. It ensures all required fields are present and formats the stories for GitHub. Take your user stories and give them to an llm along with the template.yaml file - prompting approriately. Then add the output to the stories.yaml file.
 
 3. **Issue Creation**: The `issue_creator.py` module takes the formatted stories and creates issues in the specified GitHub repository using the GitHub API.
 
-4. **Execution**: Run the `main.py` script to execute the entire process, which combines all components and provides progress feedback.
+4. **Execution**: Run the `main.py` script to execute.
 
 ## Usage
 
