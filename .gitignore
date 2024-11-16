@@ -95,5 +95,6 @@ ENV/
 
 # Cursor rules
 .cursorrules
+*.cursorrules
 
 # End of file
