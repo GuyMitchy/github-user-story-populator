@@ -28,8 +28,7 @@ GitHubUserStoryCreator/
     │   ├── github_client.py    # GitHub API client class
     │   ├── story_parser.py     # YAML parsing and validation
     │   ├── issue_creator.py    # Issue creation logic
-    │   └── utils.py            # Helper functions
-    └── main.py                 # Script entry point
+    │   └── main.py             # Script entry point
 ```
 
 
@@ -63,6 +62,10 @@ GitHubUserStoryCreator/
    - Add your GitHub API token:
      ```
      GITHUB_TOKEN=your_github_token
+     ```
+   - Add your GitHub repository name:
+     ```
+     GITHUB_REPOSITORY=your_github_repository_name
      ```
 
 4. **Run the Script**:

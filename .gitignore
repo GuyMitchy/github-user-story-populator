@@ -93,4 +93,7 @@ ENV/
 # Pyre type checker
 .pyre/
 
+# Cursor rules
+.cursorrules
+
 # End of file
